@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    padding: 15px;
+    margin: 15px;
+    
+}
+.nav-bar{
+     text-transform: uppercase;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+        
+
+}
+.nav-bar .logo{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(66, 29, 2);
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none; 
+ 
+}
+.nav-links a{
+    text-decoration:none ;
+    color: #5c5b5b;
+    position: relative;
+}
+.nav-bar .btn{
+     padding: 10px 20px;
+    background-color:rgb(66, 29, 2);
+    color: white;
+    border-radius: 9px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height:0;
+    background: rgb(174, 149, 131);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: height 0.5s;
+    
+
+}
+nav ul li a:hover::before{
+    height: 85px;
+
+}
+
+
+.hero-text{
+    text-align: center;
+    margin: 50px;
+}
+.hero-text button{
+     padding: 12px 24px;
+    background-color:rgb(66, 29, 2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 30px;
+}
+.hero-text h1{
+    font-size: 100px;
+    font-weight: 900;
+    margin: 23px;
+    line-height: -10px;
+}
+.hero-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    
+}
+.hero-text span{
+    color: rgb(66, 29, 2);
+    font-weight: 900;
+    font-size: 120px;
+    text-transform: uppercase;
+    
+
+}
+.img-section{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-y:hidden ;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.img-section::-webkit-scrollbar{
+    display: none;
+}
+.img-section img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+.imgp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 100%;
+    height: 350px;
+}
+.imgp h2{
+    margin-top: 16px;
+   font-size: 30px;
+   font-weight: 700;
+   color: rgb(66, 29, 2);
+}
+.imgp p{
+   font-size: 16px;
+   font-weight: 400;
+   padding: 16px;
+   color: gray;
+}
+.imgp button{
+    padding: 12px 24px;
+    background-color:rgb(66, 29, 2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+
+}
+.imgp img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero i{
+ display: none;
+}
+
